@@ -47,6 +47,8 @@ app.get('/image:id', (req,res)=>{
     })
 })
 //port listening
-app.listen(2000, ()=>{
-    console.log("server running");
-});
+let port = process.env.PORT;
+if (port == null || port == "") {
+  port = 8000;
+}
+app.listen(port);
