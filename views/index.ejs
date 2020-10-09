@@ -1,0 +1,44 @@
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>image-cdn</title>
+</head>
+<body>
+  
+    <div class="main">
+        <h2>Image Database</h2>
+        <table class="table">
+            <tr>
+                <th>Id</th>
+                <th>Image Title</th>
+                <th>Image URL</th>
+                <th>View</th>
+                
+            </tr>
+            
+            <%
+            if(images.length!=0){
+            var i=1;
+            images.forEach(function(image){
+            %>
+            <tr>
+                <td><%=i; %></td>
+                <td><%=image.image_title %></td>
+                <td><%=image.image_url %></td>
+                 <td class="but"><a href="image<%=image.image_id%>"><button id="button">click me</button></a></td>
+                
+            </tr>
+            <%  i++; }) %>
+            <% } else{ %>
+                <tr>
+                    <td colspan="7">No Data Found</td>
+                </tr>
+            <% } %>
+        </table>
+        
+    </div>
+    
+</body>
+</html>

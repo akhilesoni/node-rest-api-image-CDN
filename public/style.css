@@ -1,0 +1,107 @@
+.main{
+    min-width: 250px;
+    max-width: 700px;
+    height: 550px;
+    margin: auto;
+    margin-top:30px ;
+    background-color: rgb(255, 255, 255);
+    box-shadow:  1px 3px 5px rgb(180, 180, 180);
+    padding: 30px;
+    font-family: 'arial';
+    overflow-x: auto;
+    padding-top: 10px;
+    transition: 0.5s;
+
+
+}
+.main h2{
+    color: rgb(99, 99, 99);
+    transition: 0.5s;
+
+}
+body{
+    margin: 0;
+    background-color: rgb(245, 245, 245);
+}
+
+@media only screen and (max-width: 814px) {
+    body {
+        padding: 20px;
+    }
+  }
+
+
+.table tr td{
+   padding: 5px;
+   border-radius: 5px;
+}  
+.table{
+    width: 90%;
+    border: 1px solid rgb(218, 218, 218);
+    box-shadow: inset 1px 3px 3px rgb(221, 221, 221);
+    border-radius: 10px;
+    transition: 0.5s;
+
+    
+}
+.table th{
+    background-color: rgb(6, 156, 156);
+    color: rgb(255, 255, 255);
+}
+tr:nth-child(even){
+    background-color: rgb(233, 233, 233);
+}
+tr:nth-child(odd){
+    color: rgb(61, 61, 61);
+}
+.table button{
+    background-color:  rgb(30, 156, 30);
+    border: 0;
+    color: rgb(255, 255, 255);
+    width: 50px;
+    box-shadow:  1px 3px 3px rgb(221, 221, 221);
+    border-radius: 5px;
+}
+.table .but{
+    background-color: rgb(255, 255, 255);
+}
+.table button:hover{
+    box-shadow:  2px 5px 7px rgb(201, 201, 201);
+
+}
+.main2 .back_button{
+    background-color: rgb(7, 206, 57);
+    width: 88%;
+    margin: auto;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    box-shadow:  1px 3px 5px rgb(180, 180, 180);
+    transition: 0.5s;
+}
+
+.main2 .back_button:hover{
+    box-shadow:  3px 5px 8px rgb(155, 155, 155);
+}
+.main2 h2{
+    color: rgb(88, 88, 88);
+}
+
+.main2{
+    min-width: 250px;
+    max-width: 700px;
+    height: 550px;
+    margin: auto;
+    margin-top:30px ;
+    background-color: rgb(255, 255, 255);
+    box-shadow:  1px 3px 5px rgb(180, 180, 180);
+    padding: 30px;
+    font-family: 'arial';
+    padding-top: 10px;
+   text-align: center;
+   transition: 0.5s;
+
+}
+
+a{
+    text-decoration: none;
+}

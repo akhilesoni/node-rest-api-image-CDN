@@ -1,0 +1,16 @@
+{
+  "name": "restapi",
+  "version": "1.0.0",
+  "description": "restapi for retreiving images from my sql database ",
+  "main": "index.js",
+  "scripts": {
+    "server": "nodemon index.js"
+  },
+  "author": "akhlesh soni",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.5",
+    "mysql": "^2.18.1",
+    "nodemon": "^2.0.4"
+  }
+}

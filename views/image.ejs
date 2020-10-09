@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>image-cdn</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class=" main2">
+        <%
+        if(images){
+            var i =1;
+            images.forEach((image)=>{
+                if(image.image_id==id){
+                %>
+                    <h2 class="image_head"><%=image.image_title%></h2>
+                    <img src="<%=image.image_url%>" width="90%" style="    transition: 0.5s;  margin:auto ;border: 2px solid rgb(192, 192, 192);">
+
+                <%
+                }
+                i++;
+            })}%>
+        <a href="/"><div class="back_button">
+            back
+        </div></a>
+    </div>
+    
+</body>
+</html>
